@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const MovieList = props => {
@@ -36,6 +36,7 @@ function MovieDetails({ movie }) {
       <h2>
       <Link to ={`/Movies/${movie.id}`}>{title}</Link>
       </h2>
+      
       <div className="movie-director">
         Director: <em>{director}</em>
       </div>
